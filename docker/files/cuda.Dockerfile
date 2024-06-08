@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone --recursive https://github.com/naver/dust3r /dust3r
+RUN git clone --recursive https://github.com/msam13/dust3r_aws.git /dust3r
 WORKDIR /dust3r
 RUN pip install -r requirements.txt
 RUN pip install -r requirements_optional.txt
